@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrapbook Calendar - Oktober 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffe6f7, #e6f0ff);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff6ec7, #6a5acd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .day-header {
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #6a5acd;
+      color: white;
+      padding: 10px 0;
+      border-radius: 8px;
+    }
+
+    .day {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      min-height: 90px;
+      position: relative;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      overflow: visible;
+      z-index: 1;
+    }
+
+    .day:hover {
+      transform: scale(1.05);
+      z-index: 5;
+    }
+
+    .day-number {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #ff6ec7;
+      border-radius: 50%;
+      margin: 5px auto 0;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .dot-content {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      width: 280px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+
+    .dot:hover + .dot-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .carousel-inner img {
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Oktober 2025</h1>
+
+  <div class="calendar">
+    <!-- Header Hari -->
+    <div class="day-header">Min</div>
+    <div class="day-header">Sen</div>
+    <div class="day-header">Sel</div>
+    <div class="day-header">Rab</div>
+    <div class="day-header">Kam</div>
+    <div class="day-header">Jum</div>
+    <div class="day-header">Sab</div>
+
+    <!-- Empty days sebelum 1 Oktober (Rab) -->
+    <div class="day"></div>
+    <div class="day"></div>
+    <div class="day"></div>
+
+    <!-- Tanggal 1–14 -->
+    <div class="day"><div class="day-number">1</div></div>
+    <div class="day"><div class="day-number">2</div></div>
+    <div class="day"><div class="day-number">3</div></div>
+    <div class="day"><div class="day-number">4</div></div>
+    <div class="day"><div class="day-number">5</div></div>
+    <div class="day"><div class="day-number">6</div></div>
+    <div class="day"><div class="day-number">7</div></div>
+    <div class="day"><div class="day-number">8</div></div>
+    <div class="day"><div class="day-number">9</div></div>
+    <div class="day"><div class="day-number">10</div></div>
+    <div class="day"><div class="day-number">11</div></div>
+    <div class="day"><div class="day-number">12</div></div>
+    <div class="day"><div class="day-number">13</div></div>
+    <div class="day"><div class="day-number">14</div></div>
+    <div class="day"><div class="day-number">15</div></div>
+
+   
+    <!-- Sisanya -->
+    <div class="day"><div class="day-number">16</div></div>
+    <div class="day"><div class="day-number">17</div></div>
+    <div class="day"><div class="day-number">18</div></div>
+    <div class="day"><div class="day-number">19</div></div>
+    <div class="day"><div class="day-number">20</div></div>
+    <div class="day"><div class="day-number">21</div></div>
+    <div class="day"><div class="day-number">22</div></div>
+    <div class="day"><div class="day-number">23</div></div>
+    <div class="day"><div class="day-number">24</div></div>
+    <div class="day"><div class="day-number">25</div></div>
+    <div class="day"><div class="day-number">26</div></div>
+    <div class="day"><div class="day-number">27</div></div>
+    <div class="day"><div class="day-number">28</div></div>
+    <div class="day"><div class="day-number">29</div></div>
+    <div class="day"><div class="day-number">30</div></div>
+    <div class="day"><div class="day-number">31</div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
